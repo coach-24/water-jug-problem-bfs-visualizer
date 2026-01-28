@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #ecfdf5;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* Title */
+h1 {
+  margin-top: 20px;
+  font-weight: 700;
+  color: #5eead4;
+}
+
+/* Input bar */
+.top-bar input {
+  width: 90px;
+  padding: 8px;
+  margin: 6px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+
+.top-bar button {
+  padding: 10px 22px;
+  background: linear-gradient(135deg, #14b8a6, #0d9488);
+  border: none;
+  color: #042f2e;
+  font-weight: 700;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+/* Layout */
+.main {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 35px;
+}
+
+/* Jugs */
+.jugs {
+  display: flex;
+  gap: 90px;
+}
+
+.jug {
+  width: 140px;
+  height: 300px;
+  border: 4px solid #5eead4;
+  border-radius: 18px;
+  position: relative;
+  background: #022c22;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.4);
+}
+
+.water {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 0%;
+  background: linear-gradient(#99f6e4, #14b8a6);
+  border-radius: 0 0 14px 14px;
+  transition: height 0.6s ease;
+}
+
+.jug-box p {
+  margin-top: 12px;
+  font-weight: 600;
+  color: #99f6e4;
+}
+
+/* State Space */
+.states {
+  width: 330px;
+  background: rgba(15, 118, 110, 0.15);
+  padding: 20px;
+  border-radius: 18px;
+  text-align: left;
+  border: 1px solid rgba(94, 234, 212, 0.4);
+}
+
+.states h3 {
+  color: #5eead4;
+}
+
+.states li {
+  padding: 8px;
+  border-bottom: 1px solid rgba(94, 234, 212, 0.3);
+}
+
+/* Bottom */
+.bottom h3 {
+  color: #5eead4;
+}
+
+.bottom button {
+  padding: 10px 26px;
+  background: linear-gradient(135deg, #2dd4bf, #14b8a6);
+  border: none;
+  color: #042f2e;
+  font-weight: 700;
+  border-radius: 25px;
+  cursor: pointer;
+}

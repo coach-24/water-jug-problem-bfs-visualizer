@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Water Jug Problem – BFS</title>
+  <link rel="stylesheet" href="/static/style.css?v=2">
+
+</head>
+<body>
+
+<h1>Water Jug Problem – BFS (Python)</h1>
+
+<div class="top-bar">
+  <input id="capA" value="4" /> JUG A
+  <input id="capB" value="3" /> JUG B
+  <input id="goal" value="2" /> GOAL
+  <button onclick="solve()">Start</button>
+</div>
+
+<div class="main">
+  <!-- JUGS -->
+  <div class="jugs">
+    <div class="jug-box">
+      <div class="jug">
+        <div id="jugA" class="water"></div>
+      </div>
+      <p>Jug A</p>
+    </div>
+
+    <div class="jug-box">
+      <div class="jug">
+        <div id="jugB" class="water"></div>
+      </div>
+      <p>Jug B</p>
+    </div>
+  </div>
+
+  <!-- STATE SPACE -->
+  <div class="states">
+    <h3>🌳 State Space Tree (BFS)</h3>
+    <ul id="stateList"></ul>
+  </div>
+</div>
+
+<div class="bottom">
+  <h3>✅ Solution Steps</h3>
+  <p id="stateText"></p>
+  <button onclick="nextStep()">Next Step</button>
+</div>
+
+<script src="/static/script.js"></script>
+</body>
+</html>
